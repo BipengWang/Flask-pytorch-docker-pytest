@@ -6,7 +6,7 @@ The detailed information of pretrained resnet50 model could be found at https://
 ## 1.Run docker command to create an image with:
 Make sure you have **Docker Desktop** installed on your machine.
 ```
-docker build -t api-torch . #-t image name
+docker build -t api-torch .
 ```
 On this building process which takes some time, the environment required for this API is set up.
 
