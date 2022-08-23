@@ -14,7 +14,40 @@ On this building process, the environment required for this API is set up.
 ```
 docker run -dp 80:80 --name api-torch api-torch 
 ```
-Now you can go the address http://localhost:80/ on your browser and see a simple web with file submitting portal.
+Now you can go the address http://localhost:80/ on your browser and see a simple web with file submitting portal. Submit the provided picture and you will get predictions like:
+```
+{
+  "1st class & Possibility": [
+    "golden retriever", 
+    "79.1%"
+  ], 
+  "2nd class & Possibility": [
+    "collie", 
+    "0.7%"
+  ], 
+  "3rd class & Possibility": [
+    "kuvasz", 
+    "0.7%"
+  ], 
+  "4th class & Possibility": [
+    "Pembroke, Pembroke Welsh corgi", 
+    "0.5%"
+  ], 
+  "5th class & Possibility": [
+    "Labrador retriever", 
+    "0.5%"
+  ]
+}
+```
+
+To check, stop and remove containers and images, go with the commands:
+```
+docker ps
+docker images
+docker rm container-id
+docker stop/start container-id
+docker rmi image-id
+```
 
 
 
