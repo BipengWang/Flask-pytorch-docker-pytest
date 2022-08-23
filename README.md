@@ -54,7 +54,19 @@ Make sure the pytest package is installed on your machine. Go to the directory y
 ```
 pytest
 ```
+If the test passes successfully, you would see such info:
+```
+========================================= test session starts ==========================================
+platform darwin -- Python 3.9.12, pytest-7.1.1, pluggy-1.0.0
+rootdir: /Volumes/T7/HW/CSCI590/Flask-pytorch-docker-pytest
+plugins: anyio-3.5.0
+collected 1 item                                                                                       
 
+test_api.py .                                                                                    [100%]
+
+========================================== 1 passed in 0.21s ===========================================
+```
+The pytest function checks the status code (200 if success) and whether 5 classifications are returned or not. 
 
 
 
