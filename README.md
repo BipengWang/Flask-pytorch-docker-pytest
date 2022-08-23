@@ -8,7 +8,7 @@ Make sure you have **Docker Desktop** installed on your machine.
 ```
 docker build -t api-torch . #-t image name
 ```
-On this building process, the environment required for this API is set up.
+On this building process which takes some time, the environment required for this API is set up.
 
 ## 2. Run image in a docker container with:
 ```
@@ -48,6 +48,13 @@ docker rm container-id
 docker stop/start container-id
 docker rmi image-id
 ```
+
+## 3. Test the status of the API
+Make sure the pytest package is installed on your machine. Go to the directory you place this repository and enter the command:
+```
+pytest
+```
+
 
 
 
