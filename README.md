@@ -1,6 +1,7 @@
 # Flask-pytorch-docker-pytest
 This is a Flask API on a docker container that accepts an API request of an Image and returns a list of class predictions. The API is tested by pytest.
-The detailed information of pretrained resnet50 model could be found at https://github.com/NVIDIA/DeepLearningExamples and already implemented in the flask. A simple 
+
+The detailed information of pretrained resnet50 model could be found at https://github.com/NVIDIA/DeepLearningExamples and already implemented in this Flask API. A simple picture of golden retriever is provided for testing purpose. For each image request from the user, a list of 5 most possible predictions with their possibilities is returned. To set up environment for this API, please follow the instruction.
 
 ## 1.Run docker command to create an image with:
 ```
